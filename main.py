@@ -22,8 +22,9 @@ def process_file():
     if request.method == 'POST':
         f = request.files['file']
         s_secure_filename = secure_filename(f.filename)
-        f.save(os.path.join(app.config['UPLOAD_FOLDER'], s_secure_filename))
-        return 'file processed successfully'
+        if s_secure_filename.endswith('.csv'):
+            f.save(os.path.join(app.config['UPLOAD_FOLDER'], s_secure_filename))
+            return 'file processed successfully'
 
 
 if __name__ == "__main__":

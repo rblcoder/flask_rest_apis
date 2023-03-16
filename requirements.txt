@@ -1,3 +1,7 @@
 Flask
+flask-sqlalchemy
+pyscopg2
+python-dotenv
+flask-cors
 requests
 Werkzeug

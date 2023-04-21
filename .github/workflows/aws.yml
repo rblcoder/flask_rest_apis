@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us_east-2
+  AWS_REGION: us-east-2
   ECR_REPOSITORY: github
   CLUSTER_NAME: my-eks-cluster
 

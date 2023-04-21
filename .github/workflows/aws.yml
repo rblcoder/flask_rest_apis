@@ -50,7 +50,6 @@ jobs:
       run: aws eks update-kubeconfig --region $AWS_REGION --name $CLUSTER_NAME
 
     - name: Deploy to EKS
-      working-directory: stream1-10-01-2023
       env:
         IMAGE: ${{ steps.build-image.outputs.image }}
       run: |

@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: us-east-2
-  ECR_REPOSITORY: github
+  ECR_REPOSITORY: githubrepo
   CLUSTER_NAME: my-eks-cluster
 
 permissions:

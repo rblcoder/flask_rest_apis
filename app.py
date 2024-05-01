@@ -1,11 +1,7 @@
 import os
-from flask import Flask, redirect
+from flask import Flask
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import uuid
-import urllib
-import yaml
-import pprint
 import config
 
 app = Flask(__name__)

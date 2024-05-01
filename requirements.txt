@@ -1,6 +1,5 @@
 Flask
-flask-sqlalchemy
-pyscopg2
+spotipy
 python-dotenv
 flask-cors
 requests
